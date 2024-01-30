@@ -1,0 +1,38 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="0.7433880000002682">
+<testsuite name="api/api_asserts.spec.ts" timestamp="2024-01-30T15:43:49.912Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.55" errors="0">
+<testcase name="TEG#B register body tests" classname="api/api_asserts.spec.ts" time="0.55">
+<failure message="api_asserts.spec.ts:20:5 TEG#B register body tests" type="FAILURE">
+<![CDATA[  [chromium] › api/api_asserts.spec.ts:20:5 › TEG#B register body tests ─────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: null
+    Received: undefined
+
+      32 |   expect(responseBody.username).toBeDefined();
+      33 |   expect(typeof responseBody.userId).toBe("number");
+    > 34 |   expect(responseBody.updateAt).toBe(null);
+         |                                 ^
+      35 |   expect(responseBody.username).toBe("nejakyuser2");
+      36 | });
+      37 |
+
+        at /Users/petrfifka/GitProjects/playwright_kosik/tests/api/api_asserts.spec.ts:34:33
+
+    attachment #1: trace (application/zip) ──────────────────────────────────────────────────────
+    test-results/api-api_asserts-TEG-B-register-body-tests-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/api-api_asserts-TEG-B-register-body-tests-chromium/trace.zip
+
+    ─────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/api-api_asserts-TEG-B-register-body-tests-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
