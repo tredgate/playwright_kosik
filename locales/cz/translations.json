@@ -1,0 +1,16 @@
+{
+  "language_switch_locator": "[data-testid='cz']",
+  "registration_success": "🎉 Registrace úspěšná! Vítejte v TEG#B! 🎉",
+  "registration_validation_email": "Vyplň prosím validní e-mail.",
+  "registration_email_placeholder": "E-mail",
+  "registration_back_to_login": "Zpět na přihlášení",
+  "registration_loading": "Odesílám...",
+  "registration_register": "Registrovat",
+  "login_username_placeholder": "Uživatelské jméno",
+  "login_password_placeholder": "Heslo",
+  "login_failed": "Přihlášení se nezdařilo. Zkontroluj prosím své údaje.",
+  "login_lost_password": "Ztracené heslo",
+  "login_register": "Registruj se",
+  "login_login": "Přihlásit se",
+  "login_loading": "Přihlašuji se..."
+}

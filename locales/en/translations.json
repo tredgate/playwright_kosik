@@ -1,0 +1,16 @@
+{
+  "language_switch_locator": "[data-testid='en']",
+  "registration_success": "🎉 Registration succeeded! Welcome in TEG#B! 🎉",
+  "registration_validation_email": "Fill in a valid e-mail address.",
+  "registration_email_placeholder": "E-mail",
+  "registration_back_to_login": "Back to login",
+  "registration_loading": "Registering...",
+  "registration_register": "Register",
+  "login_username_placeholder": "Username",
+  "login_password_placeholder": "Password",
+  "login_failed": "Login failed, check your credentials and try again.",
+  "login_lost_password": "Lost password",
+  "login_register": "Register",
+  "login_login": "Login",
+  "login_loading": "Logging in..."
+}
