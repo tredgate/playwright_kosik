@@ -1,14 +1,172 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="3.7654069999999997">
-<testsuite name="languages_tags.spec.ts" timestamp="2024-01-31T16:27:47.073Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.792" errors="0">
-<testcase name="English test @en" classname="languages_tags.spec.ts" time="0.896">
-</testcase>
-<testcase name="Czech And English test @cz @en" classname="languages_tags.spec.ts" time="0.896">
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="31.380023">
+<testsuite name="failing_tests.spec.ts" timestamp="2024-02-08T14:10:14.690Z" hostname="chromium" tests="1" failures="1" skipped="0" time="14.251" errors="0">
+<testcase name="Failing test" classname="failing_tests.spec.ts" time="14.251">
+<failure message="failing_tests.spec.ts:3:5 Failing test" type="FAILURE">
+<![CDATA[  [chromium] › failing_tests.spec.ts:3:5 › Failing test ───────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#username2')
+
+
+      3 | test("Failing test", async ({ page }) => {
+      4 |   await page.goto("https://tredgate.com/pmtool");
+    > 5 |   await page.locator("#username2").fill("failing");
+        |                                    ^
+      6 | });
+      7 |
+
+        at /Users/petrfifka/GitProjects/playwright_kosik/tests/failing_tests.spec.ts:5:36
+
+    attachment #1: screenshot (image/png) ─────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium/test-failed-1.png
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium/video.webm
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/failing_tests-Failing-test-chromium/trace.zip
+
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ──────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#username2')
+
+
+      3 | test("Failing test", async ({ page }) => {
+      4 |   await page.goto("https://tredgate.com/pmtool");
+    > 5 |   await page.locator("#username2").fill("failing");
+        |                                    ^
+      6 | });
+      7 |
+
+        at /Users/petrfifka/GitProjects/playwright_kosik/tests/failing_tests.spec.ts:5:36
+
+    attachment #1: screenshot (image/png) ─────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium-retry1/test-failed-1.png
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium-retry1/video.webm
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/failing_tests-Failing-test-chromium-retry1/trace.zip
+
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-chromium-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="languages_tags.spec.ts" timestamp="2024-01-31T16:27:47.073Z" hostname="firefox" tests="2" failures="0" skipped="0" time="2.763" errors="0">
-<testcase name="English test @en" classname="languages_tags.spec.ts" time="1.367">
-</testcase>
-<testcase name="Czech And English test @cz @en" classname="languages_tags.spec.ts" time="1.396">
+<testsuite name="failing_tests.spec.ts" timestamp="2024-02-08T14:10:14.690Z" hostname="firefox" tests="1" failures="1" skipped="0" time="14.458" errors="0">
+<testcase name="Failing test" classname="failing_tests.spec.ts" time="14.458">
+<failure message="failing_tests.spec.ts:3:5 Failing test" type="FAILURE">
+<![CDATA[  [firefox] › failing_tests.spec.ts:3:5 › Failing test ────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#username2')
+
+
+      3 | test("Failing test", async ({ page }) => {
+      4 |   await page.goto("https://tredgate.com/pmtool");
+    > 5 |   await page.locator("#username2").fill("failing");
+        |                                    ^
+      6 | });
+      7 |
+
+        at /Users/petrfifka/GitProjects/playwright_kosik/tests/failing_tests.spec.ts:5:36
+
+    attachment #1: screenshot (image/png) ─────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox/test-failed-1.png
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox/video.webm
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/failing_tests-Failing-test-firefox/trace.zip
+
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ──────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#username2')
+
+
+      3 | test("Failing test", async ({ page }) => {
+      4 |   await page.goto("https://tredgate.com/pmtool");
+    > 5 |   await page.locator("#username2").fill("failing");
+        |                                    ^
+      6 | });
+      7 |
+
+        at /Users/petrfifka/GitProjects/playwright_kosik/tests/failing_tests.spec.ts:5:36
+
+    attachment #1: screenshot (image/png) ─────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox-retry1/test-failed-1.png
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox-retry1/video.webm
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ────────────────────────────────────────────────────────
+    test-results/failing_tests-Failing-test-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/failing_tests-Failing-test-firefox-retry1/trace.zip
+
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/failing_tests-Failing-test-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
